@@ -1,0 +1,51 @@
+.success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.success h1 {
+  font-size: 50px;
+  font-weight: 800;
+  text-align: center;
+  line-height: 1.5;
+  color: white;
+  font-family: Calibri;
+}
+
+.success p {
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.5;
+  color: white;
+  font-family: Calibri;
+  margin-top: 18px;
+}
+
+@media screen and (max-width: 890px) {
+  .success h1 {
+    font-size: 30px;
+    background: rgb(12, 39, 70);
+  }
+
+  .success .success2 {
+    background: rgb(12, 39, 70);
+    padding: 10px 10px;
+  }
+
+  .success h1 br {
+    display: none;
+  }
+
+  .success {
+    padding-left: 20px;
+    padding-right: 20px;
+    background: rgb(12, 39, 70);
+  }
+
+  .dash-content2 {
+    padding: 0;
+  }
+}

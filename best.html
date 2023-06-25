@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>County Trust Bank | Login</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="mycss/contactstyle.css" />
+    <link rel="stylesheet" href="mycss/loanstyle.css" />
+    <link rel="stylesheet" href="mycss/aboutstyle.css" />
+    <link rel="stylesheet" href="mycss/style.css" />
+    <link rel="stylesheet" href="mycss/loginstyle.css" />
+    <link
+      href="https://fonts.cdnfonts.com/css/helvetica-neue-9"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <style>
+      .login-pic {
+        background: white;
+        background-size: cover;
+        height: 100vh;
+      }
+
+      .side-btn {
+        padding: 0 10px;
+        height: 40px;
+        border-radius: 0px 6px 6px 0px;
+        transform: translate(0px, 1px);
+        background: #eef;
+      }
+
+      body {
+        background: white;
+      }
+
+      .image1 {
+        width: 100%;
+        height: 700px;
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+          url(shakehands.jpg);
+        background-position: center;
+        animation: zoom-out 6s linear infinite;
+        background-repeat: no-repeat;
+      }
+
+      .image2 {
+        width: 100%;
+        height: 700px;
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+          url(pictures/shakehands2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        animation: zoom-out 6s linear infinite;
+        background-position: center;
+      }
+
+      @keyframes zoom-in {
+        0% {
+          background-size: 1300px;
+        }
+
+        100% {
+          background-size: 1700px;
+        }
+      }
+
+      @keyframes zoom-out {
+        0% {
+          background-size: 1700px;
+        }
+
+        100% {
+          background-size: 1300px;
+        }
+      }
+
+      .slider {
+        width: 100%;
+        height: 100vh;
+      }
+
+      .slide-content {
+        width: 100%;
+        padding: 0px 50px;
+      }
+
+      #third {
+        padding: 0px 60px;
+        font-size: 13px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <section class="contaner-fluid login-content">
+      <div class="row">
+        <div class="col-md-5 login-side">
+          <div class="round-img"></div>
+          <div class="contents">
+            <h1>Welcome Back!</h1>
+            <p>
+              welcome back to hart county trust bank, please fill<br />
+              out the form to login
+            </p>
+
+            <div class="form">
+              <div class="toper">
+                <input
+                  type="email"
+                  placeholder="Email"
+                  id="email"
+                  name="email"
+                  value=""
+                /><button class="side-btn">
+                  <i class="bi-fingerprint"></i>
+                </button>
+              </div>
+              <br />
+              <div class="toper">
+                <input
+                  type="password"
+                  placeholder="Password"
+                  id="password"
+                  name="password"
+                  value=""
+                /><button class="side-btn"><i class="bi-lock"></i></button>
+              </div>
+              <div class="password-option">
+                <div class="checker">
+                  <div><input type="checkbox" /></div>
+                  <div>Remember me</div>
+                </div>
+                <p><a href="#">Forgot Password</a></p>
+              </div>
+              <button id="login">
+                <a href="dashboard.html">Login</a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-7 login-pic">
+          <div class="slider">
+            <div class="slide">
+              <div class="image1"></div>
+              <div class="slide-content">
+                <p class="top-text" id="first">
+                  Welcome To Hart County Trust Bank
+                </p>
+                <p class="head-text head-text2" id="second">
+                  YOUR <span>NUMBER ONE</span> BANKING OPTION
+                </p>
+                <p class="top-text" id="third">
+                  Finally, A bank that gives you more. Rewards Checking from
+                  Hart County Trust Bank offers the flexibility and convenience
+                  you desire
+                </p>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="image2"></div>
+              <div class="slide-content">
+                <p class="top-text" id="first">
+                  Welcome To Hart County Trust Bank
+                </p>
+                <p class="head-text head-text2" id="second">
+                  MOBILE <span>BANKING HAS</span> NEVER BEEN THIS EASY.
+                </p>
+                <p id="third">
+                  Finally, A bank that gives you more. Rewards Checking from
+                  Hart County Trust Bank offers the flexibility and convenience
+                  you desire
+                </p>
+              </div>
+            </div>
+            <!-- Add more slides as needed -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      var slideIndex = 0;
+      var slides = document.getElementsByClassName("slide");
+
+      function showSlide(index) {
+        for (var i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slides[index].style.display = "block";
+      }
+
+      function navigateSlide(n) {
+        slideIndex += n;
+        if (slideIndex >= slides.length) {
+          slideIndex = 0;
+        } else if (slideIndex < 0) {
+          slideIndex = slides.length - 1;
+        }
+        showSlide(slideIndex);
+      }
+
+      showSlide(slideIndex);
+
+      setInterval(function () {
+        navigateSlide(1);
+      }, 5000);
+    </script>
+
+    <script src="/jsCode/script.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,89 @@
+.name {
+  color: #000;
+  margin-top: 15px;
+  padding: 0 10px;
+  font-family: sans-serif;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.your-details {
+  margin-top: 17px;
+  font-family: Calibri;
+  font-size: 23px;
+  font-weight: bolder;
+}
+
+.profile-left {
+  flex-direction: column;
+  display: flex;
+}
+
+.left-write {
+  text-align: left;
+}
+
+.left-write p {
+  color: #0009;
+}
+
+.right-write p span {
+  color: #1b62e6;
+  font-size: 13px;
+}
+
+.control p {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.control {
+  margin-top: 20px;
+}
+
+.add-document {
+  gap: 2rem;
+  display: flex;
+}
+
+.document {
+  color: #000;
+  background: #eee;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  display: flex;
+}
+
+.add-sign i {
+  font-size: 40px;
+}
+
+.profile-right h3 {
+  font-weight: bolder;
+}
+
+.added-document {
+  margin-top: 40px;
+}
+
+.profile-right {
+  padding: 20px 90px;
+}
+
+@media screen and (width <= 1100px) {
+  .control {
+    display: flex;
+  }
+
+  .profile-right {
+    padding: 0;
+  }
+
+  .add-document, .document {
+    margin-top: 25px;
+  }
+}
+
+/*# sourceMappingURL=profilepage.1e4f40d4.css.map */

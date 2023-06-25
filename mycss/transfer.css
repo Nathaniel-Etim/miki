@@ -1,0 +1,203 @@
+.transfer-left h4 {
+  font-weight: 800;
+  font-size: 28px;
+  font-family: Calibri;
+}
+
+.transfer-dashboard {
+  width: 104%;
+  padding: 10px 40px;
+  background: rgb(17, 65, 133);
+  color: white;
+  padding-left: 70px;
+}
+
+.your-accounts {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+}
+
+.account1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 400px;
+  background: rgb(40, 122, 238);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.fund {
+  padding: 4px 10px;
+  font-size: 12px;
+  width: 70px;
+  background: rgb(17, 65, 133);
+  color: white;
+  margin-top: 10px;
+}
+
+.dash-content {
+  padding: 0;
+  margin: 0;
+  padding: 0;
+  margin-left: 190px;
+}
+
+.account1 p {
+  font-size: 20px;
+  font-weight: bolder;
+  line-height: 1.7;
+}
+
+.account1 p span {
+  font-size: 14px;
+  font-weight: bolder;
+  color: rgb(25, 255, 25);
+}
+
+.transfer-cover {
+  padding-left: 70px;
+}
+
+.transfer-bank-form {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.3);
+  width: 600px;
+}
+
+.transfer-bank-form2 {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.3);
+  width: 420px;
+  margin-top: 70px;
+}
+
+.transfer-bank-form h3 {
+  font-size: 18px;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+
+.input-bottom {
+  margin-bottom: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  width: 250px;
+  height: 40px;
+  background: #eef;
+}
+
+.blue {
+  background: black;
+  color: white;
+  font-size: 16px;
+  padding: 5px 15px;
+  border-radius: 2px;
+  font-weight: 600;
+  margin-top: 13px;
+}
+
+.transfer-left {
+  margin-top: 20px;
+}
+
+.form-cover {
+  display: flex;
+  gap: 3rem;
+}
+
+label {
+  margin-top: 13px;
+  margin-bottom: 8px;
+}
+
+.pin-cover {
+  display: flex;
+  gap: 1rem;
+}
+
+#pin {
+  height: 40px;
+  background: #eef;
+}
+
+#purpose {
+  height: 180px;
+  background: #eef;
+  text-align: top;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+}
+
+@media screen and (max-width: 1100px) {
+  .dash-content {
+    padding: 0;
+    margin: 0;
+    padding: 0;
+    margin-left: 0px;
+  }
+
+  .transfer-dashboard {
+    width: 100%;
+    padding: 10px 10px;
+    background: rgb(17, 65, 133);
+    color: white;
+    padding-left: 10px;
+  }
+
+  .form-cover {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 100%;
+  }
+
+  .transfer-cover {
+    padding-left: 20px;
+    width: 100%;
+    padding: 5px 4px;
+  }
+
+  .transfer-bank-form {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: none;
+    width: 100%;
+  }
+
+  .transfer-bank-form2 {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    margin-top: 4px;
+  }
+
+  .dashboard {
+    background: white;
+  }
+
+  .transfer-left h4 {
+    padding-left: 30px;
+  }
+
+  input[type="text"] {
+    width: 100%;
+  }
+  input[type="number"] {
+    width: 100%;
+  }
+
+  .pin-cover {
+    display: flex;
+    flex-direction: column;
+  }
+}

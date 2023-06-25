@@ -1,0 +1,316 @@
+<DOCTYPE html>
+  <html>
+    <head>
+      <title>County Trust Bank | dashboard</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link
+        rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;800&display=swap"
+        rel="stylesheet"
+      />
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      />
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+      />
+
+      <link rel="stylesheet" href="mycss/loanstyle.css" />
+      <link rel="stylesheet" href="mycss/loandashstyle.css" />
+      <link rel="stylesheet" href="mycss/dashstyle.css" />
+      <link rel="stylesheet" href="mycss/style.css" />
+      <link rel="stylesheet" href="mycss/contactstyle.css" />
+      <link rel="stylesheet" href="mycss/submitstyle.css" />
+      <link rel="stylesheet" href="mycss/formstyle.css" />
+
+      <link
+        href="https://fonts.cdnfonts.com/css/helvetica-neue-9"
+        rel="stylesheet"
+      />
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      />
+
+      <style>
+        .logo {
+          width: 150px;
+          height: 50px;
+          background: url(pictures/logo.png);
+          background-size: cover;
+          margin-bottom: 20px;
+        }
+
+        .profile-image {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          background: url(pictures/potrait1.jpg);
+          background-size: cover;
+        }
+
+        body {
+          background: rgb(12, 39, 70);
+        }
+
+        .welcome-panel {
+          width: 100%;
+          height: 170px;
+
+          border-radius: 12px;
+          background: url(pictures/bankbackground.jpg);
+          background-size: cover;
+          margin-top: -100px;
+          color: white;
+          padding: 5px 14px;
+        }
+
+        .profile-pic {
+          width: 170px;
+          height: 170px;
+          box-shadow: 0px 0px 13px rgba(104, 100, 100, 0.3);
+          background: url(pictures/potrait1.jpg);
+          background-size: cover;
+          background-position: center;
+          border-radius: 50%;
+          z-index: 6;
+          transform: translate(150px, 30px);
+        }
+
+        .card1 {
+          width: 100%;
+          height: 190px;
+          background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+            url(pictures/bankcard3.jpg);
+          background-size: cover;
+          border-radius: 6px;
+          padding: 10px 14px;
+        }
+
+        .card2 {
+          width: 100%;
+          height: 190px;
+          background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+            url(pictures/bankcard3.jpg);
+          background-size: cover;
+          border-radius: 6px;
+          padding: 10px 0px;
+        }
+
+        a {
+          text-decoration: none;
+        }
+
+        .loan-score {
+          width: 160px;
+          height: 200px;
+          background: url(pictures/loandash.png);
+          border-radius: 10px;
+          color: white;
+          padding: 15px 15px;
+          background-size: cover;
+          box-shadow: 0px 14px 18px rgba(0, 0, 0, 0.3);
+        }
+
+        #score2 {
+          width: 170px;
+          height: 230px;
+          background: url(pictures/loandash2.png);
+          background-size: cover;
+          box-shadow: none;
+        }
+
+        #score3 {
+          width: 170px;
+          height: 230px;
+          background: url(pictures/loandash3.png);
+          background-size: cover;
+          box-shadow: none;
+        }
+
+        .thumbs-image {
+          width: 350px;
+          height: 250px;
+          background: url(pictures/thumbs.gif);
+          background-size: cover;
+          background-position: center;
+        }
+      </style>
+    </head>
+    <body>
+      <div class="phone-navbar">
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <a href="dashboard.html">Dashboard</a>
+          <a href="loandashboard.html">Loans</a>
+          <a href="transferfunds.html">Transfer Funds</a>
+          <a href="security.html">security</a>
+          <a href="profilepage.html">Profile</a>
+          <a href="transactionlog.html">Transaction Log</a>
+        </div>
+
+        <!-- Use any element to open the sidenav -->
+        <span class="side-nav-opener" onclick="openNav()"
+          ><i class="fa fa-bars"></i>
+        </span>
+        <div class="logo-write">Hart County</div>
+
+        <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+      </div>
+
+      <section class="container-fluid dashboard">
+        <div class="row dash-cover">
+          <div class="col-md-2 dash-navbar">
+            <div class="top-content">
+              <div class="logo"></div>
+              <a href="dashboard.html"
+                ><div class="home"><i class="bi-house"></i> Dashboard</div></a
+              >
+              <a href="loandashboard.html"
+                ><div class="home active">
+                  <i class="bi-cash-coin"></i> Loans
+                </div></a
+              >
+              <a href="transferfunds.html"
+                ><div class="home">
+                  <i class="bi-reply-fill"></i> Transfer Funds
+                </div></a
+              >
+
+              <a href="security.html"
+                ><div class="home"><i class="bi-lock"></i>Security</div></a
+              >
+              <div class="profile">
+                <a href="profilepage.html"
+                  ><div class="home"><i class="bi-person"></i>Profile</div></a
+                >
+                <a href="#"
+                  ><div class="home">
+                    <i class="bi-list-task"></i>Transaction Log
+                  </div></a
+                >
+              </div>
+            </div>
+            <div class="bottom-content">
+              <a href="#"
+                ><div class="home">
+                  <i class="bi-box-arrow-in-left"></i> Log out
+                </div></a
+              >
+            </div>
+          </div>
+          <div class="col-md-10 dash-content dash-content2">
+            <div class="success">
+              <h1>Transfer Successful</h1>
+              <div class="thumbs-image"></div>
+              <p>
+                Wire Transfer Successful Note: International wire transfers
+                may<br />
+                take as many as 2 to 5 working days for the<br />
+                recipient to receive their funds<br />
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <script>
+        window.onscroll = function () {
+          myFunction();
+        };
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky");
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+      </script>
+      <script>
+        var slideIndex = 0;
+        var slides = document.getElementsByClassName("slide");
+
+        function showSlide(index) {
+          for (var i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slides[index].style.display = "block";
+        }
+
+        function navigateSlide(n) {
+          slideIndex += n;
+          if (slideIndex >= slides.length) {
+            slideIndex = 0;
+          } else if (slideIndex < 0) {
+            slideIndex = slides.length - 1;
+          }
+          showSlide(slideIndex);
+        }
+
+        showSlide(slideIndex);
+
+        setInterval(function () {
+          navigateSlide(1);
+        }, 5000);
+      </script>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script>
+        $(document).ready(function () {
+          // Add smooth scrolling to all links
+          $("a").on("click", function (event) {
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+
+              // Store hash
+              var hash = this.hash;
+
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $("html, body").animate(
+                {
+                  scrollTop: $(hash).offset().top,
+                },
+                800,
+                function () {
+                  // Add hash (#) to URL when done scrolling (default click behavior)
+                  window.location.hash = hash;
+                }
+              );
+            } // End if
+          });
+        });
+      </script>
+
+      <script>
+        /* Set the width of the side navigation to 250px */
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        /* Set the width of the side navigation to 0 */
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+      </script>
+    </body>
+  </html>
+</DOCTYPE>

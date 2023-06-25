@@ -1,0 +1,634 @@
+﻿<DOCTYPE html>
+  <html>
+    <head>
+      <title>County Trust Bank | About Us</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link
+        rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;800&display=swap"
+        rel="stylesheet"
+      />
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      />
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+      />
+      <link rel="stylesheet" href="mycss/loanstyle.css" />
+      <link rel="stylesheet" href="mycss/aboutstyle.css" />
+      <link rel="stylesheet" href="mycss/style.css" />
+      <link
+        href="https://fonts.cdnfonts.com/css/helvetica-neue-9"
+        rel="stylesheet"
+      />
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      />
+
+      <style>
+        .image1 {
+          width: 100%;
+          height: 700px;
+          background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+            url(shakehands.jpg);
+          background-position: center;
+          animation: zoom-out 6s linear infinite;
+          background-repeat: no-repeat;
+        }
+
+        .head-pic {
+          height: 35vh;
+          background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+            url(pictures/aboutimage1.avif);
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+
+        .image2 {
+          width: 100%;
+          height: 700px;
+          background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+            url(pictures/shakehands2.jpg);
+          background-size: cover;
+          background-repeat: no-repeat;
+          animation: zoom-out 6s linear infinite;
+          background-position: center;
+        }
+
+        @keyframes zoom-in {
+          0% {
+            background-size: 1300px;
+          }
+
+          100% {
+            background-size: 1700px;
+          }
+        }
+
+        @keyframes zoom-out {
+          0% {
+            background-size: 1700px;
+          }
+
+          100% {
+            background-size: 1300px;
+          }
+        }
+
+        .loan-image {
+          width: 100%;
+          height: 40vh;
+          background: url(pictures/flexi2.jpg);
+          background-size: cover;
+          background-position: center;
+          border: none;
+        }
+
+        .loan-image2 {
+          background: url(pictures/nodocument.jpg);
+          background-size: cover;
+          background-position: center;
+        }
+
+        .loan-image3 {
+          background: url(pictures/shake.jpg);
+          background-size: cover;
+          background-position: center;
+        }
+
+        .do-pic {
+          height: 680px;
+          background: url(pictures/flexi.avif);
+          background-size: cover;
+          background-position: center;
+          background-attachment: scroll;
+        }
+
+        .news-letter {
+          background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+            url(pictures/flexi.avif);
+          background-attachment: fixed;
+          text-align: center;
+          align-items: center;
+          justify-content: center;
+          height: 45vh;
+          padding-top: 100px;
+        }
+
+        .phone-nav {
+          display: none;
+        }
+
+        .right-image {
+          width: 100%;
+          height: 380px;
+          background: url(pictures/shakehands.jpg);
+          background-size: cover;
+        }
+
+        .drives {
+          height: 350px;
+          color: white;
+          background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+            url(pictures/someonewriting.jpg);
+          justify-content: center;
+          align-items: center;
+          padding: 30px 80px;
+          margin-top: 0px;
+          background-position: center;
+        }
+
+        .what-we-do {
+          margin-top: 100px;
+        }
+
+        .staff-member-pic {
+          width: 180px;
+          height: 180px;
+          background: url(pictures/potrait1.jpg);
+          background-size: cover;
+          background-position: center;
+          border-radius: 100%;
+        }
+
+        .staff-member-pic2 {
+          background: url(pictures/potrait2.avif);
+          background-size: cover;
+          background-position: center;
+        }
+
+        .staff-member-pic3 {
+          background: url(pictures/potrait3.jpg);
+          background-size: cover;
+          background-position: center;
+        }
+
+        .staff-member-pic4 {
+          background: url(pictures/potrait4.jpg);
+          background-size: cover;
+          background-position: center;
+        }
+
+        #navbar a.active {
+          color: yellow;
+          margin-left: 0px;
+        }
+
+        .home {
+          margin-left: 70px;
+        }
+
+        #no {
+          margin-top: 0;
+          margin-bottom: 60px;
+        }
+
+        #black {
+          color: white;
+          background: black;
+        }
+
+        #green {
+          color: white;
+          background: rgb(15, 87, 63);
+        }
+
+        .do-write-up {
+          height: 500px;
+        }
+
+        .do-pic {
+          height: 500px;
+        }
+
+        .loan-img {
+          width: 100%;
+          height: 300px;
+          background: url(pictures/loan2.jpg);
+          background-size: cover;
+        }
+
+        @media screen and (max-width: 1100px) {
+          .phone-nav {
+            display: block;
+            margin-left: 30px;
+          }
+
+          .phone-nav a i {
+            font-size: 40px;
+          }
+
+          .right-nav {
+            height: 110px;
+            font-size: 28px;
+          }
+
+          .slider {
+            overflow-y: hidden;
+          }
+
+          .slide {
+            overflow-y: hidden;
+          }
+
+          .do-pic {
+            height: 350px;
+          }
+        }
+
+        @media screen and (max-width: 600px) {
+          .logo img {
+            width: 140px;
+          }
+
+          .right-nav {
+            height: 70px;
+            font-size: 16px;
+            width: 210px;
+          }
+
+          .right-nav i {
+            font-size: 19px;
+          }
+
+          .phone-nav a i {
+            font-size: 24px;
+          }
+
+          .head-text {
+            font-size: 30px;
+            line-height: 40px;
+          }
+
+          #navbar {
+            height: 70px;
+          }
+
+          .write-up {
+            text-align: left;
+          }
+
+          .loan {
+            padding: 2px 25px;
+          }
+        }
+
+        @media screen and (max-width: 400px) {
+          .logo img {
+            width: 100px;
+          }
+        }
+      </style>
+    </head>
+
+    <body>
+      <header>
+        <nav>
+          <div class="logo">
+            <a href="#"><img class="image" src="pictures/logo.png" alt="" /></a>
+          </div>
+
+          <div class="language-cover">
+            <div class="lang-label">Language:</div>
+            <div class="lang-menu">
+              <div class="selected-lang">
+                <span
+                  ><img
+                    src="pictures/amflag.png"
+                    style="width: 25px; margin: 6px 0px 0px -150px" /></span
+                >English
+              </div>
+
+              <ul>
+                <li>
+                  <a href="#" class="de">German</a>
+                </li>
+
+                <li>
+                  <a href="" class="en">English</a>
+                </li>
+
+                <li>
+                  <a href="" class="fr">French</a>
+                </li>
+
+                <li>
+                  <a href="" class="ar">Arabic</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <div id="navbar">
+        <div>
+          <div class="desktop-nav">
+            <a class="home desktop-nav" href="index.html">Home</a>
+            <a class="desktop-nav" href="contact.html">Contact</a>
+            <a class="active desktop-nav" href="loan.html">Loan</a>
+            <a class="desktop-nav" href="aboutus.html">About Us</a>
+            <a class="desktop-nav" href="services.html">Services</a>
+          </div>
+          <div class="phone-nav" onclick="openNav()">
+            <a href="javascript:void(0)"><i class="fa fa-bars"></i></a>
+          </div>
+        </div>
+        <div class="right-nav">
+          <p><i class="bi-mouse-fill"></i> Virtual Banking</p>
+        </div>
+      </div>
+
+      <section
+        class="container-fluid header head-pic"
+        style="
+          background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+            url(pictures/giving.jpg);
+          background-size: cover;
+          background-position: 0px -180px;
+        "
+      >
+        <h1>Loan</h1>
+        <p>
+          <a href="index.html">Home</a> &nbsp;&nbsp; |&nbsp&nbsp;
+          <span>Loan </span>
+        </p>
+      </section>
+
+      <section class="container the-loan">
+        <div class="row change">
+          <div class="col-md-6 the-loan-write">
+            <h1>Loan</h1>
+            <p>
+              From time to time in life and business, we find ourselves needing
+              a little or a lot more money than we have to meet certain pressing
+              financial goals. At Hart County Trust Bank our loan offerings
+              provide a fall-back position to secure the funds you need.
+            </p>
+            <a href="loan.html"
+              ><button
+                class="loan-btn"
+                style="
+                  padding: 12px 35px;
+                  border-radius: 0;
+                  background: red;
+                  color: white;
+                  font-size: 13px;
+                  font-family: Montserrat;
+                "
+              >
+                APPLY NOW
+              </button></a
+            >
+          </div>
+          <div class="col-md-6 the-loan-pic">
+            <div class="loan-img"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container loan-form">
+        <div class="row split">
+          <div class="col-md-6 loan-left">
+            <h1>Fill the form below to apply for a loan</h1>
+            <p class="only">
+              <span>*</span>FOR ONLY EXISTING CUSTOMERS <span>*</span>
+            </p>
+            <p>
+              A representative will get in touch with you via the channels
+              provided on the proceedings of your loan request.
+            </p>
+
+            <div class="form">
+              <form action="">
+                <div class="row row1">
+                  <div class="col-md-6 row1-left">
+                    <label for="fname">First name:</label><br />
+                    <input type="text" id="fname" name="fname" value="" /><br />
+                  </div>
+                  <div class="col-md-6 row1-right">
+                    <label for="lname">Last name:</label><br />
+                    <input type="text" id="lname" name="lname" value="" /><br />
+                  </div>
+                </div>
+                <div class="row1 row2">
+                  <label for="email">Email:</label><br />
+                  <input type="email" id="email" name="email" value="" /><br />
+                </div>
+                <div class="row1 row3">
+                  <label for="pnumber">Phone Number:</label><br />
+                  <input
+                    type="text"
+                    id="pnumber"
+                    name="pnumber"
+                    value=""
+                  /><br />
+                </div>
+                <div class="row1 row4">
+                  <label for="country">Country:</label><br />
+                  <input
+                    type="text"
+                    id="country"
+                    name="country"
+                    value=""
+                  /><br />
+                </div>
+                <div class="row row1 row5">
+                  <div class="col-md-3 row1-left">
+                    <label for="currency">Currency:</label><br />
+                    <input
+                      type="text"
+                      id="currency"
+                      name="currency"
+                      value=""
+                    /><br />
+                  </div>
+                  <div class="col-md-9 row1-right">
+                    <label for="amount">Requested Amount:</label><br />
+                    <input
+                      type="text"
+                      id="amount"
+                      name="amount"
+                      value=""
+                    /><br />
+                  </div>
+                </div>
+
+                <a href="best.html"
+                  ><input type="button" value="START APPLICATION" id="submit"
+                /></a>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-6 loan-right">
+            <div class="row">
+              <div class="col-md-6 stack" id="shift">
+                <div class="loan-image"></div>
+                <div class="the-text">Flexible payment</div>
+              </div>
+
+              <div class="col-md-6 stack" id="shift">
+                <div class="loan-image loan-image2"></div>
+                <div class="the-text">High Credit Score Not Required</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container-fluid news-letter">
+        <p>Subscribe to our newsletter</p>
+        <input type="text" placeholder="enter your email" /><button
+          type="submit"
+        >
+          subscribe
+        </button>
+        <p class="smaller">We can't wait to hear from you</p>
+      </section>
+
+      <div class="footer-dark">
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col-md-3 item">
+                <h3>Services</h3>
+                <ul>
+                  <li><a href="#">Installation</a></li>
+                  <li><a href="#">Distribution</a></li>
+                  <li><a href="#">Servicing</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-6 col-md-3 item">
+                <h3>About</h3>
+                <ul>
+                  <li><a href="#">Company</a></li>
+                  <li><a href="#">Team</a></li>
+                  <li><a href="#">Careers</a></li>
+                </ul>
+              </div>
+              <div class="col-md-6 item text">
+                <h3>Hart County Trust Bank</h3>
+                <p>
+                  This website is a copywrite of SEAPS Limited subjected to
+                  @webikingz<br />
+                  All data are encrypted and stored as cookies for tracking
+                  purpose
+                </p>
+              </div>
+            </div>
+            <p class="copyright">Hart County Trust Bank© 2023</p>
+          </div>
+        </footer>
+      </div>
+
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="loan.html">Loan</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="services.html">Services</a>
+      </div>
+
+      <script>
+        window.onscroll = function () {
+          myFunction();
+        };
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky");
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+      </script>
+      <script>
+        var slideIndex = 0;
+        var slides = document.getElementsByClassName("slide");
+
+        function showSlide(index) {
+          for (var i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slides[index].style.display = "block";
+        }
+
+        function navigateSlide(n) {
+          slideIndex += n;
+          if (slideIndex >= slides.length) {
+            slideIndex = 0;
+          } else if (slideIndex < 0) {
+            slideIndex = slides.length - 1;
+          }
+          showSlide(slideIndex);
+        }
+
+        showSlide(slideIndex);
+
+        setInterval(function () {
+          navigateSlide(1);
+        }, 5000);
+      </script>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script>
+        $(document).ready(function () {
+          // Add smooth scrolling to all links
+          $("a").on("click", function (event) {
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+
+              // Store hash
+              var hash = this.hash;
+
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $("html, body").animate(
+                {
+                  scrollTop: $(hash).offset().top,
+                },
+                800,
+                function () {
+                  // Add hash (#) to URL when done scrolling (default click behavior)
+                  window.location.hash = hash;
+                }
+              );
+            } // End if
+          });
+        });
+      </script>
+
+      <script>
+        /* Set the width of the side navigation to 250px */
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        /* Set the width of the side navigation to 0 */
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+      </script>
+    </body>
+  </html>
+</DOCTYPE>

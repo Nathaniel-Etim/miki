@@ -1,0 +1,2 @@
+"use strict";const e=localStorage.getItem("allUsers"),t=JSON.parse(e),c=Object.values(t)[0][0],n=Object.values(c)[0];document.querySelector(".account-name").textContent=n.name,document.querySelector(".cardName").textContent=n.name,document.querySelector(".welcome").textContent=`welcome back ${n.name}`,document.querySelector(".acc-no").textContent=n.accountNumber,document.querySelector(".balance").textContent="$ 25000";
+//# sourceMappingURL=dashboard.2cc03081.js.map

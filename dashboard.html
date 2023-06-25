@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>County Trust Bank | dashboard</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link
+        rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js">
+
+      </script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js">
+
+      </script>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;800&display=swap"
+        rel="stylesheet"
+      />
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      />
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+      />
+      <link rel="stylesheet" href="mycss/style.css" />
+      <link rel="stylesheet" href="mycss/contactstyle.css" />
+      <link rel="stylesheet" href="mycss/dashstyle.css" />
+      <link
+        href="https://fonts.cdnfonts.com/css/helvetica-neue-9"
+        rel="stylesheet"
+      />
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      />
+      <style>
+        .logo {
+          width: 150px;
+          height: 50px;
+          background: url(pictures/logo.png);
+          background-size: cover;
+          margin-bottom: 20px;
+        }
+
+        .profile-image {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          background: url(pictures/potrait1.jpg);
+          background-size: cover;
+        }
+
+        body {
+          background: white;
+        }
+
+        .welcome-panel {
+          width: 100%;
+          height: 170px;
+
+          border-radius: 12px;
+          background: url(pictures/bankbackground.jpg);
+          background-size: cover;
+          margin-top: -100px;
+          color: white;
+          padding: 5px 14px;
+        }
+
+        .profile-pic {
+          width: 170px;
+          height: 170px;
+          box-shadow: 0px 0px 13px rgba(104, 100, 100, 0.3);
+          background: url(pictures/potrait1.jpg);
+          background-size: cover;
+          background-position: center;
+          border-radius: 50%;
+          z-index: 6;
+          transform: translate(150px, 30px);
+        }
+
+        .card1 {
+          width: 100%;
+          height: 190px;
+          background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+            url(pictures/bankcard3.jpg);
+          background-size: cover;
+          border-radius: 6px;
+          padding: 10px 14px;
+        }
+
+        .card2 {
+          width: 100%;
+          height: 190px;
+          background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+            url(pictures/bankcard3.jpg);
+          background-size: cover;
+          border-radius: 6px;
+          padding: 10px 0px;
+        }
+
+        a {
+          text-decoration: none;
+        }
+
+        @media screen and (max-width: 600px) {
+          .profile-pic {
+            width: 70px;
+            height: 70px;
+            box-shadow: 0px 0px 13px rgba(104, 100, 100, 0.3);
+            background: url(pictures/potrait1.jpg);
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+            z-index: 6;
+            transform: translate(0px, 0px);
+            display: none;
+          }
+
+          .welcome-panel {
+            margin: 0;
+            margin-top: 40px;
+          }
+
+          .welcome-panel h1 {
+            font-size: 24px;
+          }
+        }
+      </style>
+    </head>
+    <body>
+      <div class="phone-navbar">
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <a href="dashboard.html">Dashboard</a>
+          <a href="loandashboard.html">Loans</a>
+          <a href="transferfunds.html">Transfer Funds</a>
+          <a href="security.html">security</a>
+          <a href="profilepage.html">Profile</a>
+          <a href="transactionlog.html">Transaction Log</a>
+        </div>
+
+        <!-- Use any element to open the sidenav -->
+        <span class="side-nav-opener"  onclick="openNav()"
+          ><i class="fa fa-bars"></i>
+        </span>
+        <div class="logo-write">Hart County</div>
+
+        <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+      </div>
+      <section class="container-fluid dashboard">
+        <div class="row dash-cover">
+          <div class="col-md-2 dash-navbar">
+            <div class="top-content">
+              <div class="logo"></div>
+              <a href="dashboard.html"
+                ><div class="home active">
+                  <i class="bi-house"></i> Dashboard
+                </div></a
+              >
+              <a href="loandashboard.html"
+                ><div class="home"><i class="bi-cash-coin"></i> Loans</div></a
+              >
+              <a href="transferfunds.html"
+                ><div class="home">
+                  <i class="bi-reply-fill"></i> Transfer Funds
+                </div></a
+              >
+
+              <a href="security.html"
+                ><div class="home"><i class="bi-lock"></i>Security</div></a
+              >
+              <div class="profile">
+                <a href="profilepage.html"
+                  ><div class="home"><i class="bi-person"></i>Profile</div></a
+                >
+                <a href="transactionlog.html"
+                  ><div class="home">
+                    <i class="bi-list-task"></i>Transaction Log
+                  </div></a
+                >
+              </div>
+            </div>
+            <div class="bottom-content">
+              <a href="#"
+                ><div class="home">
+                  <i class="bi-box-arrow-in-left"></i> Log out
+                </div></a
+              >
+            </div>
+          </div>
+          <div class="col-md-10 dash-content">
+            <div class="row right-content-cover">
+              <div class="col-md-4 left-con">
+                <div class="account">
+                  <h2 class="h2">Account</h2>
+                  <div class="card-user">
+                    <p class="account-name"> </p>
+                    <p class="off">GOLD OFF-SHORE ACCOUNT</p>
+                    <label>Account No: &nbsp; <span class="acc-no"></span></label>
+                  </div>
+                  <div class="account-bal">
+                    <div></div>
+                    <div class="account-bal-info">
+                      <p>
+                        Total Balance <br />
+                        <span class="balance">$</span>
+                      </p>
+                      <p class="send-icon"><i class="bi-send"></i></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="transaction">
+                  <div class="tran-head">
+                    <p>Recent Transactions</p>
+                    <span>See all</span>
+                  </div>
+                  <div class="tran-body">
+                    <!-- <div class="trans1">
+                      <div class="lef">
+                        <div class="lef-icon">
+                          <i class="bi-credit-card-fill"></i>
+                        </div>
+                        <div class="lef-write">
+                          Chris Evans<br /><span>Debit</span>
+                        </div>
+                      </div>
+                      <div class="rit debit">- $100.00</div>
+                    </div>
+
+                    <div class="trans1">
+                      <div class="lef">
+                        <div class="lef-icon"><i class="bi-bank2"></i></div>
+                        <div class="lef-write">
+                          Hannah Luke<br /><span>Credit</span>
+                        </div>
+                      </div>
+                      <div class="rit credit">+ $50.00</div>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-8 right-con">
+                <div class="welcome-profile">
+                  <div class="profile-pic"></div>
+                  <div class="welcome-panel">
+                    <h1 class="welcome"></h1>
+                    <p>
+                      our user experience have been update for<br />
+                      maximum user experience
+                    </p>
+                    <button class="started">GET STARTED</button>
+                  </div>
+                </div>
+
+                <div class="cards">
+                  <h3 class="h2">My Cards</h3>
+                  <div class="card-cover">
+                    <div class="card1">
+                      <div class="card-status">ACTIVE</div>
+                      <div class="card-logo">VIRTUAL <span>CARD</span></div>
+                      <div class="card-number">
+                        1742 5489 9923 7472 <br /><span>CARD NUMBER</span>
+                      </div>
+                      <div class="bottom-card">
+                        <div class="card-holder">
+                          CARD HOLDER <br />
+                          <span class="cardName"></span>
+                        </div>
+                        <div class="card-holder">
+                          VALID TILL <br />
+                          <span>02 / 25</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card1 card2">
+                      <div class="card-line"></div>
+                      <div class="card-cvv">
+                        <div class="left-cvv"></div>
+                        <div class="cvv">CVV <br /><span>477</span></div>
+                      </div>
+                      <div class="card-logo card-logo2">
+                        Hart<span>County</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script>
+        $(document).ready(function () {
+          // Add smooth scrolling to all links
+          $("a").on("click", function (event) {
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+
+              // Store hash
+              var hash = this.hash;
+
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $("html, body").animate(
+                {
+                  scrollTop: $(hash).offset().top,
+                },
+                800,
+                function () {
+                  // Add hash (#) to URL when done scrolling (default click behavior)
+                  window.location.hash = hash;
+                }
+              );
+            } // End if
+          });
+        });
+      </script>        
+      <script>
+        /* Set the width of the side navigation to 250px */
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        /* Set the width of the side navigation to 0 */
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+      </script>
+    
+<script src="/jsCode/dashboard.js"  type="module"></script>
+</body>
+  </html>
+</DOCTYPE>

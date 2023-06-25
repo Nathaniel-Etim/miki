@@ -1,0 +1,268 @@
+.dash-content {
+  padding: 0;
+}
+
+.dash-navbar {
+  height: 150vh;
+}
+
+.security-head {
+  padding: 20px 27px;
+  background: white;
+  width: 100%;
+  font-size: 29px;
+  font-weight: 600;
+}
+
+.main-security {
+  margin-top: 30px;
+  padding: 1px 27px;
+}
+
+.the-factor {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.9rem;
+}
+
+.enable {
+  padding: 8px 20px;
+  border-radius: 4px;
+  font-size: 14px;
+  color: white;
+  background-color: rgb(78, 111, 255);
+}
+
+.setup {
+  padding: 8px 18px;
+  border-radius: 4px;
+  font-size: 12.2px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+
+.factor-authentication {
+  padding: 19px 24px;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
+
+.the-factor h4 {
+  font-weight: 800;
+  margin-bottom: 12px;
+  font-size: 19px;
+}
+
+.the-factor h5 {
+  font-weight: 800;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.the-factor p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+}
+
+.factor-top {
+  padding: 8px 0px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.password-left h4 {
+  font-weight: 800;
+  margin-bottom: 12px;
+  font-size: 19px;
+}
+
+.password-left p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+}
+
+.topper {
+  margin-top: 8px;
+}
+
+.change-password {
+  margin-top: 30px;
+  padding: 19px 18px;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+  margin-left: 2px;
+}
+
+label {
+  font-family: inherit;
+  font-weight: 800;
+  color: rgba(0, 0, 0, 0.8);
+  margin: 15px 0px 5px 0px;
+}
+
+.change-password input {
+  width: 100%;
+  height: 33px;
+  padding: 3px 8px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.19);
+}
+
+:focus {
+  outline: none;
+}
+
+.password-rules Ul {
+  list-style-position: outside;
+  margin-left: -20px;
+  font-size: 12px;
+  margin-top: 20px;
+  line-height: 2;
+  font-weight: 600;
+}
+
+.password-rules {
+  padding: 15px 15px;
+  background: rgb(229, 236, 247);
+  border-radius: 10px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.password-rules p {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.password-rules h5 {
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 800;
+}
+.password-right {
+  padding: 5px 20px;
+}
+
+.devices {
+  background: white;
+  padding: 20px 25px;
+  border-radius: 14px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
+
+.device-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background: rgb(255, 146, 147);
+  font-size: 21px;
+  color: white;
+  border-radius: 50%;
+}
+
+.device-head {
+  margin-top: 14px;
+}
+
+.device-head h4 {
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.device-head p {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+#sign-out {
+  font-size: 13px;
+  padding: 10px 13px;
+  color: white;
+  background: rgb(78, 111, 255);
+  border-radius: 5px;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+.phone-laptop-devices {
+  padding: 15px 0px;
+  border-top: 1px sold rgba(0, 0, 0, 0.19);
+}
+
+.device1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.device-left {
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.device-left span {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.4);
+  margin-left: 29px;
+}
+
+.device-left i {
+  font-size: 16px;
+  font-weight: 800;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 1100px) {
+  .factor-authentication {
+    padding: 19px 0px;
+    background: white;
+    border-radius: 0;
+    box-shadow: none;
+    width: 100%;
+  }
+
+  .dash-content {
+    background: white;
+  }
+
+  .factor-left {
+    width: 60%;
+    overflow-y: hidden;
+  }
+
+  .the-factor h4,
+  h5 {
+    overflow-y: hidden;
+  }
+
+  .change-password {
+    padding: 19px 0px;
+    background: white;
+    border-radius: 0;
+    box-shadow: none;
+    width: 100%;
+  }
+
+  .change-password h4 {
+    overflow-y: hidden;
+  }
+
+  .password-left,
+  .password-right {
+    padding: 0;
+  }
+
+  .password-rules {
+    margin-top: 30px;
+  }
+}
+
+
+/*# sourceMappingURL=/securitystyle.68cef8b6.css.map */

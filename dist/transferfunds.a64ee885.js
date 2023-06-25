@@ -1,0 +1,2 @@
+"use strict";const e=localStorage.getItem("allUsers"),t=JSON.parse(e),n=Object.values(t)[0][0];Object.values(n)[0];const c=document.querySelector(".account-name"),o=document.querySelector(".input-amount");document.getElementById("pin");const u=document.querySelector(".blue"),l=[];u.addEventListener("click",function(e){e.preventDefault(),l.push({transName:c,transAmount:o}),console.log(l)});
+//# sourceMappingURL=transferfunds.a64ee885.js.map

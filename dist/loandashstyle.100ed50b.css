@@ -1,0 +1,299 @@
+.loan-amount {
+  display: flex;
+  gap: 4rem;
+}
+
+.dash-content {
+  padding: 30px 80px;
+}
+
+.loan-score p {
+  font-size: 15px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.loan-score h2 {
+  font-size: 65px;
+  text-align: center;
+  font-weight: 800;
+  font-family: sans-serif;
+}
+
+.refresh {
+  text-align: right;
+  width: 100%;
+}
+
+.refresh p {
+  text-align: center;
+  width: 30px;
+  background: white;
+  color: black;
+  margin-left: 100px;
+  font-weight: 800;
+  margin-top: 28px;
+  font-size: 15px;
+  padding: 7px 0px;
+  border-radius: 50%;
+}
+
+.loan-amount-figure {
+  background: white;
+  padding: 5px 30px;
+  border-radius: 12px;
+  width: 800px;
+}
+
+.loan-amount-figure h5 {
+  font-family: sans-serif;
+  font-weight: 600;
+  color: rgb(92, 91, 91);
+}
+
+h5 {
+  font-family: sans-serif;
+  font-weight: 600;
+  color: rgb(92, 91, 91);
+}
+
+.amount-cover {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.amount-figure {
+  font-size: 20px;
+  font-weight: 1000;
+  color: rgb(17, 65, 131);
+}
+
+.amount-figure span {
+  font-size: 55px;
+  font-weight: 600;
+  font-family: sans-serif;
+  color: rgb(17, 65, 131);
+}
+
+.percent-paid {
+  font-size: 27px;
+  color: rgb(17, 65, 131);
+  font-weight: 600;
+  text-align: center;
+  border-top: 14px solid rgb(53, 174, 47);
+  border-right: 14px solid #eee;
+  border-bottom: 14px solid #eee;
+  border-left: 14px solid rgb(53, 174, 47);
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.percent-paid span {
+  font-size: 14px;
+  color: rgb(17, 65, 131);
+  font-weight: 600;
+  line-height: 1;
+}
+.loan-product-cover {
+  display: flex;
+  gap: 2rem;
+}
+
+.loan-order-cover {
+  margin-top: 30px;
+}
+
+.total-cover {
+  display: flex;
+  gap: 2rem;
+}
+
+.score2 p {
+  font-size: 9px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.score2 h2 {
+  font-size: 33px;
+  text-align: left;
+  font-weight: 600;
+  font-family: Calibri;
+}
+
+.score3 p {
+  font-size: 9px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.score3 h2 {
+  font-size: 33px;
+  text-align: left;
+  font-weight: 600;
+  font-family: Calibri;
+}
+
+#refresh {
+  text-align: right;
+  width: 100%;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: right;
+  margin-top: 65px;
+}
+
+#refresh span {
+  text-align: right;
+  padding-top: 5px;
+}
+
+#refresh p {
+  text-align: center;
+  width: 30px;
+  background: white;
+  color: black;
+  margin-left: 0px;
+  font-weight: 800;
+  margin-top: 0px;
+  font-size: 15px;
+  padding: 7px 0px;
+  border-radius: 50%;
+}
+
+.loans-items {
+  background: white;
+  width: 600px;
+  border-radius: 12px;
+  padding-left: 40px;
+}
+
+.loan-item1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 17px 19px;
+}
+
+.loan-item1 p {
+  font-weight: 600;
+  width: 30%;
+}
+
+.out-head {
+  color: rgb(17, 65, 131);
+}
+
+.out-green {
+  color: rgb(53, 174, 47);
+}
+
+.loan-history-items {
+  width: 100%;
+  padding-right: 0px;
+}
+
+.loan-history {
+  margin-top: 30px;
+}
+
+.dash-navbar {
+  position: fixed;
+}
+
+.dash-content {
+  margin-left: 240px;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+.red {
+  color: red;
+}
+
+@media screen and (max-width: 890px) {
+  .dash-content {
+    margin: 0;
+    padding: 20px 12px;
+  }
+
+  .no-display {
+    display: none;
+  }
+
+  .loans-items {
+    padding-left: 10px;
+    margin: 0;
+    width: 100%;
+    padding-right: 10px;
+  }
+
+  .loan-item1 {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 17px 0px;
+  }
+
+  .loan-item1 p {
+    font-weight: 600;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .loan-amount {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .refresh p {
+    margin-left: 16px;
+    margin-top: 23px;
+  }
+
+  .amount-cover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .percent-paid {
+    width: 120px;
+  }
+
+  .loan-amount-figure {
+    background: white;
+    padding: 5px 30px;
+    padding-bottom: 40px;
+    border-radius: 12px;
+    width: 100%;
+  }
+
+  .amount-figure span {
+    font-size: 30px;
+  }
+
+  .loan-amount-figure h5 {
+    font-size: 14px;
+    color: black;
+    text-align: center;
+    padding-block: 10px;
+  }
+
+  .loan-product-cover {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .total-cover {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+/*# sourceMappingURL=/loandashstyle.100ed50b.css.map */

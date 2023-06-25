@@ -1,0 +1,156 @@
+﻿.about-content {
+  margin-top: 50px;
+}
+
+.header h1 {
+  font-size: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: white;
+}
+
+.header p {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+}
+
+.header p a {
+  color: white;
+}
+
+.header p span {
+  color: orange;
+}
+
+.left-content p {
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  color: grey;
+  font-weight: 1;
+}
+
+.left-content p span {
+  border-top: 4px solid orange;
+  padding-top: 15px;
+}
+
+.left-content .big {
+  font-size: 35px;
+  color: black;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+
+.left-content .content-write {
+  color: #838383;
+  font-size: 15px;
+  line-height: 2;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+}
+
+.divide {
+  padding: 0px 20px;
+}
+
+.right-content {
+  padding-top: 50px;
+}
+
+.drives h1 {
+  text-align: center;
+  font-weight: 800;
+  font-size: 32px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.drive-left h3 {
+  font-size: 29px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  color: orange;
+}
+
+.drive-left p {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.8;
+}
+
+.the-staff {
+  display: flex;
+  gap: 9rem;
+  text-align: center;
+  margin-top: 100px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.pc-1 {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  justify-content: center;
+  padding: 30px 0px 0px 0px;
+  font-size: 60px;
+  font-weight: bold;
+  box-shadow: none;
+  border: none;
+}
+
+.pc-write {
+  font-size: 35px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+}
+
+.pc-write span {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.do-write-up {
+  height: 750px;
+}
+
+.lang-menu ul {
+  z-index: 10;
+  margin-top: -13px;
+}
+
+.staff-member-write {
+  font-size: 18px;
+  color: black;
+  line-height: 1.5;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 20px;
+}
+
+.staff-member-write span {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media screen and (max-width: 825px) {
+  .the-staff {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .divide {
+    padding: 0px 8px;
+  }
+
+  .left-content .big {
+    font-size: 22px;
+  }
+}
+
+
+/*# sourceMappingURL=/aboutstyle.0ca5c906.css.map */
