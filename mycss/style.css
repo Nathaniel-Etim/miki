@@ -106,20 +106,8 @@ nav {
   background-repeat: no-repeat;
 }
 
-.de:before {
-  /* background-image: url(https://www.countryflags.io/de/flat/32.png); */
-}
-
 .en:before {
   background-image: url(../pictures/logo.png);
-}
-
-.fr:before {
-  /* background-image: url(https://www.countryflags.io/fr/flat/32.png); */
-}
-
-.ar:before {
-  /* background-image: url(https://www.countryflags.io/ae/flat/32.png); */
 }
 
 .lang-menu:hover ul {

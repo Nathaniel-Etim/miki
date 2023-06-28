@@ -21,13 +21,14 @@ async function fetchData() {
 
     tensaction.forEach(function (mov, i) {
       const html = `
-        <div class="loan-item1">
+      <div class="loan-item1">
         <p>${mov.date}</p>
         <p>${mov.transName}</p>
         <p class="red">- $${mov.transAmount}</p>
-        <p class="none">Debit</p>
-        <p class="none">#53BV899GFT</p>
+        <p class="none">credit</p>
+        <p class="none">#53BV${i}99GFT</p>
       </div>`;
+      //
       document
         .querySelector(".loan-history-items")
         .insertAdjacentHTML("afterbegin", html);

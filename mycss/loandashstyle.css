@@ -216,11 +216,12 @@ html {
 @media screen and (max-width: 890px) {
   .dash-content {
     margin: 0;
+    margin-left: 1px;
     padding: 20px 12px;
   }
 
   .no-display {
-    display: none;
+    /* display: none; */
   }
 
   .loans-items {

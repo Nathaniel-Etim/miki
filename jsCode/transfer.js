@@ -26,35 +26,38 @@ userName.textContent = `Hi, ${user.name}`;
 transfer.addEventListener("click", async function (event) {
   event.preventDefault();
 
-  // Access the input values
-  const transName = accountName.value;
-  const transAmount = transferAmount.value;
+  if (+transferPin.value === 1289 && transferAmount.value > 0) {
+    // Access the input values
+    const transName = accountName.value;
+    const transAmount = transferAmount.value;
 
-  function getCurrentFormattedDate() {
-    const currentDate = new Date();
-    const day = currentDate.getDate();
-    const month = currentDate.getMonth() + 1;
-    const year = currentDate.getFullYear();
-    const formattedDate = `${day}/${month}/${year}`;
-    return formattedDate;
-  }
-
-  const currentFormattedDate = getCurrentFormattedDate();
-
-  const response = await fetch(
-    "https://react-http-f3ac8-default-rtdb.firebaseio.com/mikitranssaction.json",
-    {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        // Add any required authentication headers or other headers here
-      },
-      body: JSON.stringify({
-        transName,
-        transAmount: +transAmount,
-        date: currentFormattedDate,
-      }),
+    function getCurrentFormattedDate() {
+      const currentDate = new Date();
+      const day = currentDate.getDate();
+      const month = currentDate.getMonth() + 1;
+      const year = currentDate.getFullYear();
+      const formattedDate = `${day}/${month}/${year}`;
+      return formattedDate;
     }
-  );
-  window.location.replace("dashboard.html");
+
+    const currentFormattedDate = getCurrentFormattedDate();
+
+    const response = await fetch(
+      "https://react-http-f3ac8-default-rtdb.firebaseio.com/mikitranssaction.json",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          // Add any required authentication headers or other headers here
+        },
+        body: JSON.stringify({
+          transName,
+          transAmount: +transAmount,
+          date: currentFormattedDate,
+        }),
+      }
+    );
+    window.location.href = "dashboard.html";
+    return;
+  }
 });

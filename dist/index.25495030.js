@@ -580,11 +580,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const userEmailInput = document.getElementById("email");
     const userPasswordInput = document.getElementById("password");
     const loginBtn = document.getElementById("login");
-    const menuBtn = document.querySelector(".side-nav-opener");
-    menuBtn.addEventListener("click", function(event) {
-        event.preventDefault();
-        document.getElementById("mySidenav").style.width = "250px";
-    });
     //! dashBord page
     const dashboard = document.querySelector(".dashboard-container");
     let currentUser;
@@ -592,6 +587,7 @@ document.addEventListener("DOMContentLoaded", function() {
         e.preventDefault();
         const allusers = [];
         const response = await fetch("https://react-http-f3ac8-default-rtdb.firebaseio.com/mikiBank.json");
+        if (!response.ok) alert("Failed to fetch data");
         // check if userName exists
         const data = await response.json();
         allusers.push(data);
@@ -603,7 +599,7 @@ document.addEventListener("DOMContentLoaded", function() {
             localStorage.setItem("allUsers", JSON.stringify({
                 allusers
             }));
-            window.location.replace("dashboard.html");
+            window.location.href = "dashboard.html";
         } else console.log("error");
     });
 });

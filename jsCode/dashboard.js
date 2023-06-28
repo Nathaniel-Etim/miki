@@ -6,27 +6,6 @@ const allUsers = JSON.parse(localStorageitem);
 const spec = Object.values(allUsers)[0][0];
 const user = Object.values(spec)[0];
 
-const amount = 100000;
-
-const userName = (document.querySelector(".account-name").textContent =
-  user.name);
-const cardName = (document.querySelector(".cardName").textContent = user.name);
-const welcome = (document.querySelector(
-  ".welcome"
-).textContent = `welcome back ${user.name}`);
-
-const accountNumber = (document.querySelector(".acc-no").textContent =
-  user.accountNumber);
-const balance = (document.querySelector(
-  ".balance"
-).textContent = `$ ${amount}`);
-
-const localStorageTransfer = localStorage.getItem("transfer");
-const userTransfer = JSON.parse(localStorageTransfer);
-
-const containerMovements = document.querySelector(".tran-body");
-const lastThreeItems = userTransfer?.slice(-3);
-
 async function fetchData() {
   try {
     const response = await fetch(
@@ -45,6 +24,18 @@ async function fetchData() {
         return el.transAmount;
       })
       .reduce((accumulator, currentValue) => accumulator + currentValue);
+
+    document.querySelector(".account-name").textContent = user.name;
+    document.querySelector(".cardName").textContent = user.name;
+    document.querySelector(
+      ".welcome"
+    ).textContent = `welcome back ${user.name}`;
+
+    document.querySelector(".acc-no").textContent = user.accountNumber;
+
+    document.querySelector(".balance").textContent = `$ ${user.balance}`;
+
+    const containerMovements = document.querySelector(".tran-body");
 
     document.querySelector(".balance").textContent = `$ ${amount - alltrans}`;
 
@@ -68,8 +59,9 @@ async function fetchData() {
 
     // Further processing or handling of the retrieved data can be done here
   } catch (error) {
-    console.error("Error:", error);
+    alert("Error:", error);
   }
+  return;
 }
 
 fetchData();
